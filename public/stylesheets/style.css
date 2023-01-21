@@ -26,3 +26,11 @@ a {
   top: 0px;
   right: 0px;
 }
+#blackCat {
+  position: relative;
+}
+#blackCat img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
