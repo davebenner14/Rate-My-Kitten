@@ -1,6 +1,6 @@
 const Schema = mongoose.Schema;
 
-const movieSchema = new Schema({
+const kittenSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -68,11 +68,25 @@ const reviewSchema = new Schema(
   }
 );
 
-const ratingSchema = new Schema({
-  rating: {
-    type: Number,
-    min: 1,
-    max: 5,
-    default: 5,
+const ratingSchema = new Schema(
+  {
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: 5,
+    },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    userName: String,
+    userAvatar: String,
   },
-});
+  {
+    timestamps: true,
+  }
+);
+
+module.exports = mongoose.model("Kitten", kittenSchema);
