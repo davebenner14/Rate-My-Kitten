@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>Rate My Kitten</title>
+  </head>
+  <body>
+    <h2>Add a New Cat</h2>
+    <form action="/kittens" method="POST">
+      <label>Name: <input type="text" name="name" /> </label><br />
+      <label>Age: <input type="text" name="age" /> </label><br />
+      <label
+        >Gender:
+        <select name="gender"></select>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Unknown">Unknown</option> </label
+      ><br />
+      <label
+        >Breed
+        <select name="breed">
+          <option value="Persian">Persian</option>
+          <option value="Maine Coon">Maine Coon</option>
+          <option value="Ragdoll">Ragdoll</option>
+          <option value="Siamese">Siamese</option>
+          <option value="British Shorthair">British Shorthair</option>
+          <option value="Exotic Shorthair">Exotic Shorthair</option>
+          <option value="Abyssinian">Abyssinian</option>
+          <option value="Tonkinese">Tonkinese</option>
+          <option value="Russian Blue">Russian Blue</option>
+          <option value="Bengal">Bengal</option>
+          <option value="Scottish Fold">Scottish Fold</option>
+          <option value="Siberian">Siberian</option>
+          <option value="Birman">Birman</option>
+          <option value="Himalayan">Himalayan</option>
+          <option value="Nebelung">Nebelung</option>
+          <option value="Norwegian Forest">Norwegian Forest</option>
+          <option value="Bombay">Bombay</option>
+          <option value="Burmese">Burmese</option>
+          <option value="Chartreux">Chartreux</option>
+          <option value="American Shorthair">American Shorthair</option>
+          <option value="Mutt">Mutt</option>
+          <option value="Other">Other</option>
+        </select> </label
+      ><br />
+      <label
+        >Cast (separate actors with commas):
+        <input type="text" name="cast" /> </label
+      ><br />
+      <label
+        >Now Showing:
+        <input type="checkbox" name="nowShowing" checked /> </label
+      ><br />
+      <input type="submit" value="Add Kitten" />
+    </form>
+  </body>
+</html>
