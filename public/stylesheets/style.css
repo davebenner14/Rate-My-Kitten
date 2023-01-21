@@ -17,3 +17,12 @@ a {
 .login img {
   height: 30px;
 }
+
+#orangeCat {
+  position: relative;
+}
+#orangeCat img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
