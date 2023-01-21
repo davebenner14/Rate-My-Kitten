@@ -13,10 +13,10 @@
       src="/images/blackCat.jpg" />
       <img id="orangeCat" 
       src="/images/orangeCat.jpg" />
-    <a href="/kittens" <%- title === 'All Kittens' ? 'class="active"' : '' %>>ALL CATS</a>
+    <a href="/kittens/new.ejs" <%- title === 'All Kittens' ? 'class="active"' : '' %>>ALL CATS</a>
     <% if (user) { %>
      
-      <a href="/movies/new" <%- title === 'Add Movie' ? 'class="active"' : '' %>>ADD MOVIE</a>
+      <a href="/kittens/new.ejs" <%- title === 'Add Kitten' ? 'class="active"' : '' %>>ADD Kitten</a>
       <a href="/logout">LOG OUT</a>
       <% } else { %>
       <a href="/auth/google" class="login"
