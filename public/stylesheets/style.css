@@ -5,6 +5,7 @@ body {
 }
 header {
   background-color: white;
+  text-align: right;
 }
 
 a {
@@ -21,20 +22,43 @@ a {
 .login img {
   height: 30px;
 }
+div {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  overflow: hidden;
+}
 
-#orangeCat {
-  position: relative;
-}
-#orangeCat img {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
 #blackCat {
   position: relative;
+  top: -4px;
 }
-#blackCat img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4267b2,
+      0 0 40px #4267b2, 0 0 50px #4267b2, 0 0 60px #4267b2, 0 0 70px #4267b2;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1db954, 0 0 40px #1db954,
+      0 0 50px #1db954, 0 0 60px #1db954, 0 0 70px #1db954, 0 0 80px #1db954;
+  }
+}
+
+.second-div {
+  display: flex;
+  float: right;
+}
+.first-div {
+  display: flex;
+  float: right;
 }

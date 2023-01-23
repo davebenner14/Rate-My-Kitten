@@ -9,24 +9,27 @@
   </head>
   <body>
     <nav>
-      <img id ="blackCat"
-      src="/images/blackCat.jpg" />
-      <img id="orangeCat" 
-      src="/images/orangeCat.jpg" />
-    <a href="/kittens/new.ejs" <%- title === 'All Kittens' ? 'class="active"' : '' %>>ALL CATS</a>
-    <% if (user) { %>
-     
-      <a href="/kittens/new.ejs" <%- title === 'Add Kitten' ? 'class="active"' : '' %>>ADD Kitten</a>
-      <a href="/logout">LOG OUT</a>
-      <% } else { %>
-      <a href="/auth/google" class="login"
-        >LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"
-      /></a>
-      <% } %>
+      <div>
+            <img id ="blackCat"
+            src="/images/blackCat.jpg" />
+            <h1><%= title %></h1>
+            <img id="orangeCat" 
+            src="/images/orangeCat.jpg" />
+          </div>
+            <a href="/kittens/new.ejs" <%- title === 'All Kittens' ? 'class="active"' : '' %>>ALL CATS</a>
+            <% if (user) { %>
+            <div id="subHeader">
+            <a href="/kittens/new.ejs" <%- title === 'Add Kitten' ? 'class="active"' : '' %>>ADD Kitten</a>
+            <a href="/logout">LOG OUT</a>
+            <% } else { %>
+            <a href="/auth/google" class="login"
+            >LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"
+            /></a>
+            <% } %>
+       </div>
     </nav>
-    <main>
-      <h1><%= title %></h1>
-    </main>
+  <main>
+  </main>
   </body>
 </html>
 </main>
