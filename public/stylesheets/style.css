@@ -62,3 +62,10 @@ h1 {
   display: flex;
   float: right;
 }
+
+nav {
+  background-color: white;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+}
