@@ -69,3 +69,13 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+
+.addContainer {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid black;
+  width: 60%;
+  margin: 0 auto;
+}
