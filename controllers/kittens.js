@@ -10,7 +10,7 @@ module.exports = {
 
 function index(req, res) {
   Kitten.find({}, function (err, kittens) {
-    res.redirect("kittens/index", { title: "All Kittens", kittens });
+    res.render("kittens/index", { title: "All Kittens", kittens });
   });
 }
 

@@ -1,20 +1,82 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/movies" method="POST">
-  <label>Title:</label>
-  <input type="text" name="title" />
-  <label>Release Year:</label>
-  <input type="text" name="releaseYear" />
-  <label>MPAA Rating</label>
-  <select name="mpaaRating">
-    <option value="G">G</option>
-    <option value="PG">PG</option>
-    <option value="PG-13">PG-13</option>
-    <option value="R">R</option>
-  </select>
-  <label>Now Showing:</label>
-  <input type="checkbox" name="nowShowing" checked />
-  <input type="submit" value="Add Movie" />
-</form>
+
+
+<section id="show-page">
+  <div>Name: </div>
+  <div><%= kitten.name %></div>
+  <div>Age: </div>
+  <div><%= kitten.age %></div>
+  <div>Gender: </div>
+  <div><%= kitten.gender %></div>
+  <div>Breed: </div>
+  <div><%= kitten.breed %></div>
+  <div>Bio:</div>
+  <div><%= kitten.bio %></div>
+</section>
+
+<br><br><h2>Reviews</h2>
+<% if (user) { %>
+  <form id="add-review-form" method="POST"
+    action="/kittens/<%= movie._id %>/reviews">
+    <label>Review:</label>
+    <textarea name="content"></textarea>
+    <label>Rating:</label>
+    <select name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select>
+    <input type="submit" value="Add Review">
+  </form>
+<% } %>
+
+<% if (movie.reviews.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Date</th>
+        <th>Review</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let total = 0 %>
+      <% kitten.reviews.forEach(function(r) { %>
+        <% total += r.rating %>
+        <tr>
+          <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer"> <%= r.userName %></td>
+          <td><%= r.createdAt.toLocaleDateString() %></td>
+          <td><%= r.content %></td>
+          <td><%= r.rating %></td>
+          <td>
+            <% if (user?._id.equals(r.user)) { %>
+              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+              </form>
+            <% } %>
+          </td>
+        </tr>
+      <% }); %>
+      <tr>
+        <td colspan="2"></td>
+        <td>
+          <strong>
+            <%= (total / kitten.reviews.length).toFixed(1) %>
+          </strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5>No Reviews Yet</h5>
+<% } %>
+
+</main>
+</body>
 
 <%- include('../partials/footer') %>
