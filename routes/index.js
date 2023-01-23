@@ -4,7 +4,7 @@ const passport = require("passport");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+  res.render("index", { title: "Rate My Kitten" });
 });
 
 // Google OAuth login route
@@ -17,7 +17,7 @@ router.get(
       // Requesting the user's profile and email
       scope: ["profile", "email"],
       // Optionally force pick account every time
-      // prompt: "select_account"
+      prompt: "select_account",
     }
   )
 );
