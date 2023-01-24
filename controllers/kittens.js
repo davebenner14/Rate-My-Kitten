@@ -26,7 +26,7 @@ function create(req, res) {
   for (let key in req.body) {
     if (req.body[key] === "") delete req.body[key];
   }
-
+  console.log("this is the file", req.file);
   const kitten = new Kitten(req.body);
   kitten.save(function (err) {
     if (err) return res.redirect("/kittens/new");

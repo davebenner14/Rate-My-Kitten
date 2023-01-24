@@ -1,13 +1,15 @@
 <%- include('../partials/header') %>
 
 
-<title>Rate My Kitten</title>
 </head>
 <body>
-  <h2>Add a New Cat</h2>
+  <h2 class="shimmer">Add a New Cat</h2>
   <div class="addContainer">
-  <form action="/kittens" method="POST">
+  <form action="/kittens" method="POST" enctype="multipart/form-data">
     <label>Name: <input type="text" name="name" /> </label><br />
+    <label>Add Photo: 
+        <input type="file" name="photo" id="photo">
+    </label>
     <label>Age: <input type="text" name="age" /> </label><br />
     <label
       >Gender:
@@ -42,9 +44,11 @@
         <option value="Mutt">Mutt</option>
         <option value="Other">Other</option>
       </select> </label
-    ><br />
-    <label> Bio:<input type="text" name="bio" /> </label><br />
-    <input type="submit" value="Add Kitten" />
+    ><label>Bio:<br />
+    <textarea name="bio" id="bio-text" cols="30" rows="10"></textarea>
+  </label>
+    <br />
+    <button class="add-kitten" type="submit">Add Kitten</button>
     </form>
     </div>
 

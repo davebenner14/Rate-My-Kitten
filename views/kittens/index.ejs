@@ -1,4 +1,8 @@
 <%- include('../partials/header') %>
+</head>
+<h2 class="shimmer">Cat Rankings</h2>
+
+<div class="indexContainer">
 
 <table id="list">
   <thead>
@@ -16,6 +20,7 @@
       <td><a href="/kittens/<%= k._id %>">DETAILS</a></td>
     </tr>
     <% }); %>
+  </div>
   </tbody>
 </table>
 

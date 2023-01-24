@@ -5,6 +5,22 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var session = require("express-session");
 var passport = require("passport");
+const multer = require("multer");
+
+// upload photo
+// const multer = require("multer");
+// const upload = multer({
+//   dest: "uploads/",
+//   fileFilter: (req, file, cb) => {
+//     if (!file.originalname.match(/\.(jpg|jpeg|png|gif)$/)) {
+//       return cb(new Error("Only image files are allowed!"));
+//     }
+//     cb(undefined, true);
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, new Date().toISOString() + "-" + file.originalname);
+//   },
+// });
 
 require("dotenv").config();
 require("./config/database");
@@ -27,6 +43,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+
+// add photos
+app.use(multer({}).single("photo"));
 
 app.use(
   session({
