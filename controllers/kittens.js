@@ -14,8 +14,17 @@ function index(req, res) {
   });
 }
 
+// function show(req, res) {
+//   Kitten.findById(req.params.id);
+// }
+
 function show(req, res) {
-  Kitten.findById(req.params.id);
+  Kitten.findById(req.params.id).exec(function (err, kitten) {
+    res.render("kittens/show", {
+      title: "Kitten Detail",
+      kitten,
+    });
+  });
 }
 
 function newKitten(req, res) {
@@ -27,6 +36,7 @@ function create(req, res) {
     if (req.body[key] === "") delete req.body[key];
   }
   console.log("this is the file", req.file);
+
   const kitten = new Kitten(req.body);
   kitten.save(function (err) {
     if (err) return res.redirect("/kittens/new");
