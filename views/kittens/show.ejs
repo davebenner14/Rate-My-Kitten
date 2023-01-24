@@ -1,16 +1,20 @@
 <%- include('../partials/header') %>
 
-<section id="show-page">
-  <div>Name:</div>
-  <div><%= kitten.name %></div>
-  <div>Age:</div>
-  <div><%= kitten.age %></div>
-  <div>Gender:</div>
-  <div><%= kitten.gender %></div>
-  <div>Breed:</div>
-  <div><%= kitten.breed %></div>
-  <div>Bio:</div>
-  <div><%= kitten.bio %></div>
+<h2 class="shimmer">Cat Profile</h2>
+
+<section class="showContainer" id="show-page">
+  <form>
+    <label>Name:</label>
+    <div><%= kitten.name %></div>
+    <label>Age:</label>
+    <div><%= kitten.age %></div>
+    <label>Gender:</label>
+    <div><%= kitten.gender %></div>
+    <label>Breed:</label>
+    <div><%= kitten.breed %></div>
+    <label>Bio:</label>
+    <div><%= kitten.bio %></div>
+  </form>
 </section>
 
 <%- include('../partials/footer') %>
