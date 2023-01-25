@@ -5,16 +5,12 @@
 <section class="showContainer" id="show-page">
   <img src="<%= kitten.photo %>" class="cat-photo" id="image-container" />
   <div id="text-container">
-    <label>Name:</label>
-    <div><%= kitten.name %></div>
-    <label>Age:</label>
-    <div><%= kitten.age %></div>
-    <label>Gender:</label>
-    <div><%= kitten.gender %></div>
-    <label>Breed:</label>
-    <div><%= kitten.breed %></div>
-    <label>Bio:</label>
-    <div><%= kitten.bio %></div>
+    <div class="cat-display"><label>Name:</label> <%= kitten.name %></div>
+    <div class="cat-display"><label>Age:</label> <%= kitten.age %></div>
+    <div class="cat-display"><label>Gender:</label> <%= kitten.gender %></div>
+    <div class="cat-display"><label>Breed:</label> <%= kitten.breed %></div>
+    <div class="bio"><label>Bio:</label></div>
+    <div class="bio"><%= kitten.bio %></div>
   </div>
 </section>
 
