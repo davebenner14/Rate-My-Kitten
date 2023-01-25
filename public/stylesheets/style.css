@@ -246,47 +246,22 @@ h2 {
 
 .showContainer {
   background-color: rgb(214, 233, 251);
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
   position: relative;
   border: 2px solid black;
   width: 60%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+}
+#image-container {
+  height: 400px;
 }
 
-.showContainer label {
+#text-container {
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid black;
-}
-
-.showContainer label > input {
-  width: 100%;
-}
-
-.showContainer label > select {
-  width: 100%;
-}
-.showContainer button {
-  align-self: center;
-  padding: 5px;
-  width: 100%;
-}
-
-.showContainer form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 550px;
-}
-
-.cat-photo {
-  max-width: 400px;
-  max-height: 400px;
-  object-fit: cover;
+  flex-wrap: wrap;
 }
