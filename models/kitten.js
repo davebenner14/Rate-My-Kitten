@@ -86,6 +86,9 @@ const kittenSchema = new Schema({
   bio: {
     type: String,
   },
+  photo: {
+    type: String,
+  },
   ratings: [ratingSchema],
 
   review: [reviewSchema],

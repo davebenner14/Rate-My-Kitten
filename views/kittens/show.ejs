@@ -3,7 +3,8 @@
 <h2 class="shimmer">Cat Profile</h2>
 
 <section class="showContainer" id="show-page">
-  <form>
+  <img src="<%= kitten.photo %>" class="cat-photo" id="image-container" />
+  <div id="text-container">
     <label>Name:</label>
     <div><%= kitten.name %></div>
     <label>Age:</label>
@@ -14,7 +15,7 @@
     <div><%= kitten.breed %></div>
     <label>Bio:</label>
     <div><%= kitten.bio %></div>
-  </form>
+  </div>
 </section>
 
 <%- include('../partials/footer') %>
