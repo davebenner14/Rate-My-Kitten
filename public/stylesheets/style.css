@@ -93,6 +93,7 @@ nav {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  font-size: larger;
 }
 
 .addContainer label > input {
@@ -506,4 +507,8 @@ table td {
 h5 {
   justify-content: center;
   text-align: center;
+}
+
+.ratingNum {
+  color: #f5c21b;
 }

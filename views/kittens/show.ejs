@@ -49,7 +49,7 @@
     method="POST"
     action="/kittens/<%= kitten._id %>/reviews"
   >    <textarea name="content"></textarea>
-    <input type="submit" value="Add Review" />
+    <input class="btn btn-primary" type="submit" value="Add Review" />
   </form>
 </section>
 <% } %>
@@ -75,7 +75,7 @@
       <option value="8">8</option>
       <option value="9">9</option>
       <option value="10" selected>10</option>
-      <input type="submit" value="Add Rating" />
+      <input class="btn btn-primary" type="submit" value="Add Rating" />
     </select>
   </form>
 </section>
@@ -110,7 +110,7 @@
         <td>
           <% if (user?._id.equals(r.user)) { %>
           <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-            <button type="submit">X</button>
+            <button class="btn btn-primary" type="submit">X</button>
           </form>
           <% } %>
         </td>

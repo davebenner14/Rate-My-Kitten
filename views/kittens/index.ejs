@@ -12,12 +12,18 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
     <% kittens.forEach(function(k) { %> 
-      
     <tr>
       <td><%= k.name %></td>
-      <td><%= k.rating %></td>
+      <% if (k.ratings.length) { %>
+
+        <% let total = 0 %> <% k.ratings.forEach(function(r) { %> <% total +=
+          r.rating %>
+          <% }); %>
+              <td class="ratingNum"><%= (total / k.ratings.length).toFixed(1) %></td>
+      <% } else { %>
+        <td>NA</td>
+      <% } %>
       <td><a href="/kittens/<%= k._id %>">DETAILS</a></td>
     </tr>
     <% }); %>
