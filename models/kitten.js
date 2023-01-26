@@ -91,7 +91,7 @@ const kittenSchema = new Schema({
   },
   ratings: [ratingSchema],
 
-  review: [reviewSchema],
+  reviews: [reviewSchema],
 });
 
 module.exports = mongoose.model("Kitten", kittenSchema);
