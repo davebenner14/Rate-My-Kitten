@@ -7,14 +7,12 @@
  <span class="shiny">
   <span class="inner-shiny">
   <% if (kitten.ratings.length) { %>
-  <table>
     <thead>
      
     </thead>
     <tbody>
       <% let total = 0 %> <% kitten.ratings.forEach(function(r) { %> <% total +=
       r.rating %>
-      <tr></tr>
       <% }); %>
       <tr>
         <td>
@@ -22,7 +20,6 @@
         </td>
       </tr>
     </tbody>
-  </table>
   <% } else { %>
   <h5>No Ratings Yet</h5>
   <% } %>
@@ -82,9 +79,11 @@
     </select>
   </form>
 </section>
-<section>
-  <% } %> <% if (kitten.reviews.length) { %>
+
+<section class="showTable">
   <table>
+
+  <% } %> <% if (kitten.reviews.length) { %>
     <thead>
       <tr>
         <th>User</th>

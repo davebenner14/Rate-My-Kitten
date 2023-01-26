@@ -8,15 +8,16 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Age</th>
+      <th>Rating</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    <% kittens.forEach(function(k) { %>
+    <% kittens.forEach(function(k) { %> 
+      
     <tr>
       <td><%= k.name %></td>
-      <td><%= k.age %></td>
+      <td><%= k.rating %></td>
       <td><a href="/kittens/<%= k._id %>">DETAILS</a></td>
     </tr>
     <% }); %>
