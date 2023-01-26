@@ -3,7 +3,8 @@
 <h2 class="shimmer">Cat Profile</h2>
 <br></br>
 
-<section class="shiny">
+<section class="showRating">
+ <span class="shiny">
   <span class="inner-shiny">
   <% if (kitten.ratings.length) { %>
   <table>
@@ -17,7 +18,7 @@
       <% }); %>
       <tr>
         <td>
-          <strong> <%= (total / kitten.ratings.length).toFixed(1) %> </strong>
+          <strong> <%= (total / kitten.ratings.length).toFixed(1) %> / 10 </strong>
         </td>
       </tr>
     </tbody>
@@ -25,6 +26,7 @@
   <% } else { %>
   <h5>No Ratings Yet</h5>
   <% } %>
+  </span>
   </span>
 </section>
 <br></br>
@@ -49,9 +51,7 @@
     id="add-review-form"
     method="POST"
     action="/kittens/<%= kitten._id %>/reviews"
-  >
-    <label>Review:</label>
-    <textarea name="content"></textarea>
+  >    <textarea name="content"></textarea>
     <input type="submit" value="Add Review" />
   </form>
 </section>

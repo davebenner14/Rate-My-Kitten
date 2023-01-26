@@ -15,10 +15,6 @@ function index(req, res) {
   });
 }
 
-// function show(req, res) {
-//   Kitten.findById(req.params.id);
-// }
-
 function show(req, res) {
   Kitten.findById(req.params.id).exec(function (err, kitten) {
     res.render("kittens/show", {
@@ -27,15 +23,6 @@ function show(req, res) {
     });
   });
 }
-
-// function show(req, res) {
-//   Kitten.findById(req.params.id)
-//     .populate("photoId")
-//     .exec(function (err, kitten) {
-//       if (err) return res.send(err);
-//       res.render("kittens/show", { title: "Kitten Detail", kitten });
-//     });
-// }
 
 function newKitten(req, res) {
   res.render("kittens/new", { title: "Add Cat" });
