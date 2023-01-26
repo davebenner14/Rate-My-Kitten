@@ -1,7 +1,33 @@
 <%- include('../partials/header') %>
 
 <h2 class="shimmer">Cat Profile</h2>
+<br></br>
 
+<section class="shiny">
+  <span class="inner-shiny">
+  <% if (kitten.ratings.length) { %>
+  <table>
+    <thead>
+     
+    </thead>
+    <tbody>
+      <% let total = 0 %> <% kitten.ratings.forEach(function(r) { %> <% total +=
+      r.rating %>
+      <tr></tr>
+      <% }); %>
+      <tr>
+        <td>
+          <strong> <%= (total / kitten.ratings.length).toFixed(1) %> </strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <% } else { %>
+  <h5>No Ratings Yet</h5>
+  <% } %>
+  </span>
+</section>
+<br></br>
 <section class="showContainer" id="show-page">
   <img src="<%= kitten.photo %>" class="cat-photo" id="image-container" />
   <div id="text-container">
@@ -22,30 +48,43 @@
   <form
     id="add-review-form"
     method="POST"
-    action="/kittens/<%= kitten._id %>/reviews">
+    action="/kittens/<%= kitten._id %>/reviews"
+  >
     <label>Review:</label>
     <textarea name="content"></textarea>
     <input type="submit" value="Add Review" />
   </form>
 </section>
+<% } %>
 
 <br /><br />
 <h2>Rating</h2>
+<% if (user) { %>
 <section class="ratingContainer">
-  <form>
+  <form
+    id="add-ratings-form"
+    method="POST"
+    action="/kittens/<%= kitten._id
+    %>/ratings"
+  >
     <select name="rating">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
-      <option value="5" selected>5</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10" selected>10</option>
       <input type="submit" value="Add Rating" />
-    </form>
     </select>
-  </section>
+  </form>
+</section>
 <section>
   <% } %> <% if (kitten.reviews.length) { %>
-    <table>
+  <table>
     <thead>
       <tr>
         <th>User</th>
@@ -68,6 +107,7 @@
         </td>
         <td><%= r.createdAt.toLocaleDateString() %></td>
         <td><%= r.content %></td>
+
         <td>
           <% if (user?._id.equals(r.user)) { %>
           <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
@@ -79,68 +119,13 @@
       <% }); %>
       <tr>
         <td colspan="2"></td>
-        <td>
-          <strong> <%= (total / kitten.reviews.length).toFixed(1) %> </strong>
-        </td>
+        <td></td>
       </tr>
     </tbody>
-    </table>
-    <% } else { %>
-    <h5>No Reviews Yet</h5>
-    <% } %>
-  </section>
-  <br /><br />
-<section>
-
-
-  <% if (kitten.ratings.length) { %>
-    <table>
-    <thead>
-      <tr>
-        <th>User</th>
-        <th>Date</th>
-        <th>Rating</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% let total = 0 %> <% kitten.ratings.forEach(function(r) { %> <% total +=
-      r.rating %>
-      <tr>
-        <td class="rating-user">
-          <img
-            alt="avatar"
-            src="<%= r.userAvatar %>"
-            referrerpolicy="no-referrer"
-          />
-          <%= r.userName %>
-        </td>
-        <td><%= r.createdAt.toLocaleDateString() %></td>
-        <td><%= r.content %></td>
-        <td><%= r.rating %></td>
-        <td>
-          <% if (user?._id.equals(r.user)) { %>
-          <form action="/rating/<%= r._id %>?_method=DELETE" method="POST">
-            <button type="submit">X</button>
-          </form>
-          <% } %>
-        </td>
-      </tr>
-      <% }); %>
-      <tr>
-        <td colspan="2"></td>
-        <td>
-          <strong> <%= (total / kitten.rating.length).toFixed(1) %> </strong>
-        </td>
-      </tr>
-    </tbody>
-    </table>
-    <% } else { %>
-    <h5>No Rating Yet</h5>
-    <% } %>
-
+  </table>
+  <% } else { %>
+  <h5>No Reviews Yet</h5>
+  <% } %>
 </section>
-
-
 
 <%- include('../partials/footer') %>

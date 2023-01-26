@@ -7,8 +7,8 @@ const ratingSchema = new Schema(
     rating: {
       type: Number,
       min: 1,
-      max: 5,
-      default: 5,
+      max: 10,
+      default: 10,
     },
     user: {
       type: Schema.Types.ObjectId,
