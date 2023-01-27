@@ -1,12 +1,16 @@
-<p align="center""><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png"></p>
+<div align="center">
+  <a href="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-<p style="text-align: center;">
+<h1 align="center">Rate My Kitten</h1>
 
-# Rate-My-Kitten
+<div align="center">
+  <a href="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-</p>
-
-<p align="center"><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png"></p>
+    Second Project for General Assembly SEI
 
 For my second project at my software engineering bootcamp I am making a cat ranking web app.
 
