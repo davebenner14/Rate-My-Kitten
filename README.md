@@ -1,6 +1,10 @@
 <p align="center""><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png"></p>
 
-<p style="text-align: center;">Rate-My-Kitten</p>
+<p style="text-align: center;">
+
+# Rate-My-Kitten
+
+</p>
 
 <p align="center"><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png"></p>
 
