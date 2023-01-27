@@ -1,11 +1,19 @@
+<img src="assets/Screenshot 2023-01-26 at 9.45.50 PM.png">
+
 # Rate-My-Kitten
 
-A description of your game. Background info of the game is a nice touch.
+<img src="assets/Screenshot 2023-01-26 at 9.46.05 PM.png">
 
-# Screenshot
+For my second project at my software engineering bootcamp I am making a cat ranking web app.
 
-<img src="url to your image on imgur">
-<img src="url to your image on imgur">
+The purpose of the project is to demonstrate our newly learned skills from unit 2: Node, Express, Mongoose, APIs and CRUD along with skills learned in unit 1: CSS, HTML, and JavaScript.
+
+Rate My Kitten was built in one week.
+
+# Screenshots
+
+<img src="assets/Screenshot 2023-01-26 at 9.33.59 PM.png">
+<img src="assets/Screenshot 2023-01-26 at 9.34.59 PM.png">
 
 # Technologies Used
 
@@ -16,9 +24,12 @@ A description of your game. Background info of the game is a nice touch.
 
 # Getting Started
 
-[Click to Play Connect Four!](your deployment url here)
+[Rate My Kitten Web App](https://rate-my-kitten.herokuapp.com/kittens)
 
 # Next Steps
 
-- Future enhancement one...
-- Future enhancement two...
+- Mobile friendly
+- Ascending order rankings
+- Ability to add multiple pictures
+- Chat function
+- Buttons along the side(s)
