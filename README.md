@@ -1,8 +1,8 @@
-<img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
+<p style="text-align: center;"><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
 
 # Rate-My-Kitten
 
-<img src="/Users/davidbenner/Documents/rate-my-kitten/assets/Screenshot 2023-01-26 at 9.46.05 PM.png">
+<img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png"></p>
 
 For my second project at my software engineering bootcamp I am making a cat ranking web app.
 
@@ -12,8 +12,8 @@ Rate My Kitten was built in one week.
 
 # Screenshots
 
-<img src="/Users/davidbenner/Documents/rate-my-kitten/assets/Screenshot 2023-01-26 at 9.33.59 PM.png">
-<img src="/Users/davidbenner/Documents/rate-my-kitten/assets/Screenshot 2023-01-26 at 9.34.59 PM.png">
+<p style="text-align: center;"><img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.33.59%20PM.png">
+<img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.34.59%20PM.png"></p>
 
 # Technologies Used
 
