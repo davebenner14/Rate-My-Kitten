@@ -1,9 +1,9 @@
 <div align="center">
-  <img src=="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png" width="120" height="120">
+  <img src=="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
 
 <h1 align="center">Rate My Kitten</h1>
 
-<img src=="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png" width="120" height="120">
+<img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png">
 
     Second Project for General Assembly SEI
 
