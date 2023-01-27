@@ -1,4 +1,4 @@
-<img src="/Users/davidbenner/Documents/rate-my-kitten/assets/Screenshot 2023-01-26 at 9.45.50 PM.png">
+<img src="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
 
 # Rate-My-Kitten
 
