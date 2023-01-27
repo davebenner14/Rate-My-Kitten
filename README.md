@@ -1,15 +1,15 @@
 <div align="center">
   <a href="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.45.50%20PM.png">
-    <img  width="100" height="100">
   </a>
 
 <h1 align="center">Rate My Kitten</h1>
 
-  <a href="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png" width="100" height="100">
+  <a href="https://github.com/davebenner14/Rate-My-Kitten/blob/main/Assets/Screenshot%202023-01-26%20at%209.46.05%20PM.png">
   </a>
-  </div>
 
     Second Project for General Assembly SEI
+
+  </div>
 
 For my second project at my software engineering bootcamp I am making a cat ranking web app.
 
